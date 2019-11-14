@@ -13,7 +13,7 @@ class InstagramPost extends Model
     ];
 
     /**
-     * This returns the url of the image with standard resolution
+     * This returns the url of the image with standard resolution.
      * @return mixed
      */
     public function getStandardResolutionImageUrlAttribute()
@@ -31,7 +31,7 @@ class InstagramPost extends Model
     }
 
     /**
-     * This returns the caption, with line returns
+     * This returns the caption, with line returns.
      * @return mixed
      */
     public function getCaptionTextAttribute()
@@ -40,7 +40,7 @@ class InstagramPost extends Model
     }
 
     /**
-     * This returns the html formatted caption
+     * This returns the html formatted caption.
      * @return string
      */
     public function getHtmlCaptionTextAttribute()
@@ -49,7 +49,7 @@ class InstagramPost extends Model
     }
 
     /**
-     * This returns the direct link to the post on instagram
+     * This returns the direct link to the post on instagram.
      * @return mixed
      */
     public function getLinkAttribute()

@@ -26,7 +26,7 @@ class LaravelInstagram
     }
 
     /**
-     * This refreshes the instagram cache by calling the API and storing the data in the database
+     * This refreshes the instagram cache by calling the API and storing the data in the database.
      * @param  null  $instagram
      */
     public static function updateCache($instagram = null) :void
