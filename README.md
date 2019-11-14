@@ -1,11 +1,10 @@
 # Laravel Instagram
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/retinens/laravel-instagram.svg?style=flat-square)](https://packagist.org/packages/retinens/laravel-instagram)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/retinens-be/laravel-instagram.svg?style=flat-square)](https://packagist.org/packages/retinens-be/laravel-instagram)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
-[![Build Status](https://travis-ci.org/WhereIsLucas/package-test.svg?style=flat-square&branch=develop)](https://travis-ci.org/WhereIsLucas/package-test)
-[![Quality Score](https://github.styleci.io/repos/219571681/shield)](https://scrutinizer-ci.com/g/retinens/laravel-instagram)
-![Codecov](https://img.shields.io/codecov/c/gh/whereislucas/package-test?style=flat-square)
-[![Total Downloads](https://img.shields.io/packagist/dt/retinens/laravel-instagram.svg?style=flat-square)](https://packagist.org/packages/retinens/laravel-instagram)
+[![Build Status](https://travis-ci.org/retinens-be/laravel-instagram.svg?style=flat-square&branch=develop)](https://travis-ci.org/retinens-be/laravel-instragram)
+![Codecov](https://img.shields.io/codecov/c/gh/retinens-be/laravel-instagram?style=flat-square)
+[![Total Downloads](https://img.shields.io/packagist/dt/retinens-be/laravel-instagram.svg?style=flat-square)](https://packagist.org/packages/retinens-be/laravel-instagram)
 
 
 This package adds an Instagram post model to your Laravel application, for a cool feed or something like this.
