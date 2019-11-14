@@ -38,12 +38,23 @@ class InstagramPostTest extends TestCase
 
     public function testGetCaptionTextAttribute()
     {
+        $this->assertEquals("Décomposition de notre réalisation pour des capsules vidéo pour le spectacle d'@anonymdanceschool .
+.
+.
+.
+.
+#vfx #vfxbreakdown #makingof #retinens #visuals #2d #3d #behindthescenes #aftereffects #video #portal #videomaker #adobe #animation",
+            InstagramPost::first()->captionText);
+    }
+
+    public function testGetHtmlCaptionTextAttribute()
+    {
         $this->assertEquals("Décomposition de notre réalisation pour des capsules vidéo pour le spectacle d'@anonymdanceschool .<br />
 .<br />
 .<br />
 .<br />
 .<br />
 #vfx #vfxbreakdown #makingof #retinens #visuals #2d #3d #behindthescenes #aftereffects #video #portal #videomaker #adobe #animation",
-            InstagramPost::first()->captionText);
+            InstagramPost::first()->htmlCaptionText);
     }
 }

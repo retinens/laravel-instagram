@@ -12,11 +12,11 @@ class LaravelInstagram
      * @return Collection|InstagramPost[]
      * @throws LaravelInstagramException
      *
-     * This returns posts
+     * This returns posts from the database, limiting to an optional given amount
      */
     public static function getPosts($amount = null)
     {
-        if ($amount == null) {
+        if ($amount === null) {
             return InstagramPost::all();
         } elseif ($amount > 0) {
             return InstagramPost::take($amount)->get();
@@ -25,10 +25,14 @@ class LaravelInstagram
         }
     }
 
+    /**
+     * This refreshes the instagram cache by calling the API and storing the data in the database
+     * @param  null  $instagram
+     */
     public static function updateCache($instagram = null) :void
     {
         // @codeCoverageIgnoreStart
-        if ($instagram == null) {
+        if ($instagram === null) {
             $instagram = new Instagram(env('INSTAGRAM_KEY'));
         }
         // @codeCoverageIgnoreStart

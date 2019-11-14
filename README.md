@@ -2,7 +2,7 @@
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/retinens-be/laravel-instagram.svg?style=flat-square)](https://packagist.org/packages/retinens-be/laravel-instagram)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
-[![Build Status](https://travis-ci.org/retinens-be/laravel-instagram.svg?style=flat-square&branch=develop)](https://travis-ci.org/retinens-be/laravel-instragram)
+[![Build Status](https://travis-ci.org/retinens-be/laravel-instagram.svg?branch=master)](https://travis-ci.org/retinens-be/laravel-instagram)
 ![Codecov](https://img.shields.io/codecov/c/gh/retinens-be/laravel-instagram?style=flat-square)
 [![Total Downloads](https://img.shields.io/packagist/dt/retinens-be/laravel-instagram.svg?style=flat-square)](https://packagist.org/packages/retinens-be/laravel-instagram)
 
@@ -54,8 +54,10 @@ On each post, you can get attributes:
 ``` php
 // Full Size Image
 $post->standardResolutionImageUrl
-// Caption text (use {!! !!} to escape <br> tags)
+// Caption text 
 $post->captionText
+// HTML formatted caption text (use {!! !!} to escape <br> tags)
+$post->htmlCaptionText
 // Link to the post
 $post->link
 ```
