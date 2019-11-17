@@ -1,5 +1,5 @@
 {
-    "name": "retinens-be/laravel-instagram",
+    "name": "retinens/laravel-instagram",
     "description": "A Laravel Package",
     "keywords": [
         "retinens",
@@ -7,7 +7,7 @@
         "instagram",
         "laravel"
     ],
-    "homepage": "https://github.com/retinens-be/laravel-instagram",
+    "homepage": "https://github.com/retinens/laravel-instagram",
     "license": "MIT",
     "type": "library",
     "authors": [
