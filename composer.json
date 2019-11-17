@@ -1,6 +1,6 @@
 {
     "name": "retinens/laravel-instagram",
-    "description": "A Laravel Package",
+    "description": "A laravel wrapper to use instagram API and to cache posts",
     "keywords": [
         "retinens",
         "laravel-instagram",
