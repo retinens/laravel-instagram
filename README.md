@@ -12,6 +12,9 @@ This package adds an Instagram post model to your Laravel application, for a coo
 
 The package relies on the `vinkla/instagram` package, and adds a solution to cache and a model 
 
+![](https://repository-images.githubusercontent.com/221643787/bad3b180-06e3-11ea-919c-7cfe078d10e9)
+
+
 ## Installation
 
 You can install the package via composer:
