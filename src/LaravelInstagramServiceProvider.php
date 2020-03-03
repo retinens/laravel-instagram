@@ -17,21 +17,19 @@ class LaravelInstagramServiceProvider extends ServiceProvider
     {
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
 
-        if ($this->app->runningInConsole()) {
-            $this->publishes([
-                __DIR__.'/../config/config.php' => config_path('laravel-instagram.php'),
-            ], 'config');
+        $this->publishes([
+            __DIR__.'/../config/config.php' => config_path('laravel-instagram.php'),
+        ], 'config');
 
-            //Registering package commands.
-            $this->commands([
-                 RefreshCache::class,
-             ]);
+        //Registering package commands.
+        $this->commands([
+            RefreshCache::class,
+        ]);
 
-            $this->app->booted(function () {
-                $schedule = app(Schedule::class);
-                $schedule->command('laravel-instagram:refresh')->everyTenMinutes();
-            });
-        }
+        $this->app->booted(function () {
+            $schedule = app(Schedule::class);
+            $schedule->command('laravel-instagram:refresh')->everyTenMinutes();
+        });
     }
 
     /**
