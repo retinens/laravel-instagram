@@ -27,7 +27,7 @@
         "php-http/message": "^1.8"
     },
     "require-dev": {
-        "orchestra/testbench": "3.8.*",
+        "orchestra/testbench": "3.8.* || 4.13.*",
         "phpunit/phpunit": "^7.0 || ^8.0",
         "php-http/mock-client": "^1.3"
     },
